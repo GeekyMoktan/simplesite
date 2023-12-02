@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal portfolio</title>
+    <style>
+      /* universal selector  */
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      /* element selector */
+      body {
+        width: 80%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      /* navigation bar */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+      }
+
+      nav p {
+        font-weight: bold;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+      }
+      nav ul li {
+        margin-left: 10px;
+      }
+
+      nav ul li a {
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      nav ul li a:hover {
+        background-color: black;
+        color: white;
+      }
+
+      /* hero section for description */
+      section#desc {
+        width: 100%;
+        height: 400px;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+      }
+
+      div.small-img {
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* table css */
+      .table-collapse {
+        border-collapse: collapse;
+      }
+
+      table#education_table tr:hover {
+        background-color: azure;
+      }
+
+      table#education_table td,
+      table#education_table th {
+        border: 1px solid rgb(100, 99, 99);
+        padding: 4px 8px;
+      }
+
+      /* list css */
+      div#whole_list {
+        width: 180px;
+      }
+
+      /* form css */
+      form#form {
+        width: 380px;
+        margin: auto;
+        padding: 15px 0px;
+        text-align: center;
+      }
+
+      .form_details {
+        padding: 10px 20px;
+        margin-bottom: 10px;
+      }
+
+      .form_label {
+        margin-bottom: 4px;
+        text-align: left;
+        font-weight: 600;
+      }
+
+      /* footer css */
+      footer#footer {
+        font-size: 14px;
+        color: gray;
+        text-align: center;
+      }
+
+      /* helper css classes  */
+      .border-bottom {
+        border-bottom: 1px solid lightgray;
+      }
+
+      .border {
+        border: 1px solid black;
+      }
+
+      .title-20 {
+        font-size: 20px;
+      }
+
+      .margin-bottom-4 {
+        margin-bottom: 4px;
+      }
+
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .margin-top-10 {
+        margin-top: 10px;
+      }
+
+      .padding-top-4 {
+        padding: 4px 0px;
+        width: 100%;
+      }
+
+      .button-action {
+        padding: 4px 8px;
+      }
+
+      .section_padding {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+      .content-padding {
+        padding: 4px 8px;
+      }
+
+      .font-bold {
+        font-weight: bold;
+      }
+
+      .font-normal {
+        font-weight: normal;
+      }
+
+      .margin-left-10 {
+        margin-left: 10px;
+      }
+
+      .font-black {
+        color: black;
+      }
+
+      .font-underline {
+        text-decoration: underline;
+      }
+
+      .click:hover {
+        color: rgb(113, 111, 111);
+      }
+
+      .font-black {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="border-bottom">
+      <div id="logo">
+        <p>Moktan</p>
+      </div>
+
+      <ul>
+        <li><a href="#desc" class="font-black">Bio</a></li>
+        <li><a href="#education" class="font-black">Education</a></li>
+        <li><a href="#interest" class="font-black">Interest</a></li>
+        <li><a href="#contact_form" class="font-black">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero section for description -->
+    <section id="desc" class="border-bottom section_padding">
+      <div id="inside_desc">
+        <div class="small-img margin-bottom-4">
+          <figure></figure>
+        </div>
+        <h4 class="margin-bottom-4">Nishan moktan</h4>
+        <p class="">
+          Hello My name is Nishan Moktan Tamang currently studying bachelor in
+          Herald College.
+        </p>
+      </div>
+    </section>
+
+    <!-- section to show education in table -->
+    <section id="education" class="border-bottom section_padding">
+      <h5 class="title-20 margin-bottom-4">Education History</h5>
+      <table id="education_table" class="center table-collapse margin-top-10">
+        <tr>
+          <th>Education level</th>
+          <th>Location</th>
+        </tr>
+        <tr>
+          <td>Primary</td>
+          <td>Parakuleshwor</td>
+        </tr>
+        <tr>
+          <td>Higher</td>
+          <td>AVM</td>
+        </tr>
+        <tr>
+          <td>Basic HTML,CSS diploma</td>
+          <td>Computer Planet</td>
+        </tr>
+        <tr>
+          <td>+2</td>
+          <td>Model academy</td>
+        </tr>
+        <tr>
+          <td>Pre diploma automobiles</td>
+          <td>Bhaisepati training</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- section to display interest and project in list -->
+    <section id="interest" class="border-bottom section_padding">
+      <h5 class="title-20 margin-bottom-4">Interest and hobbies</h5>
+      <div id="whole_list" class="list center margin-top-10">
+        <ul>
+          <li class="font-bold margin-bottom-4">
+            Interest
+            <ul class="font-normal margin-left-10 content-padding">
+              <li>Automobiles</li>
+              <li>Video Editing</li>
+              <li>Front end development</li>
+              <li>UI/UX</li>
+            </ul>
+          </li>
+          <li class="font-bold margin-bottom-4">
+            Hobbies
+            <ul class="font-normal margin-left-10 content-padding">
+              <li>Travelling</li>
+              <li>Watching Movies</li>
+              <li>Exploring</li>
+            </ul>
+          </li>
+          <li class="font-bold margin-bottom-4">
+            Projects
+            <ul class="font-normal margin-left-10 content-padding">
+              <a
+                href="https://youtube.com/playlist?list=PLw8eLWQB8id7F1jBnpitEsXYHJzx4YAuZ&si=DWJlmvJQsYbBS5jf"
+                target="_blank"
+              >
+                <li class="font-underline click font-black">Playlist</li>
+              </a>
+
+              <a href="https://react-ts-lark1j.stackblitz.io" target="_blank">
+                <li class="font-underline font-black click">using Tailwind</li>
+              </a>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- section to show contact form to contact -->
+    <section id="contact_form" class="border-bottom section_padding">
+      <h5 class="title-20 margin-bottom-4">Contact Form</h5>
+      <form id="form" class="margin-top-10">
+        <div class="form_details">
+          <div class="form_label">
+            <label for="name">Name</label>
+          </div>
+          <input
+            class="padding-top-4"
+            type="text"
+            name="name"
+            placeholder="Enter Your Name"
+          />
+        </div>
+
+        <div class="form_details">
+          <div class="form_label">
+            <label for="email">Email</label>
+          </div>
+          <input
+            class="padding-top-4"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div class="form_details">
+          <div class="form_label">
+            <label for="message">Enter your message</label>
+          </div>
+          <textarea
+            class="padding-top-4"
+            name="message"
+            id=""
+            cols="20"
+            rows="3"
+            placeholder="Enter your message here"
+          ></textarea>
+        </div>
+
+        <div class="form_details">
+          <input class="button-action" type="submit" name="submit" />
+          <input class="button-action" type="reset" name="reset" />
+        </div>
+      </form>
+    </section>
+
+    <!-- at last footer -->
+    <footer id="footer" class="border-bottom padding-top-4">
+      <p>
+        &copy 2023 Minimalistic Web Design by
+        <span
+          class="click font-bold font-black"
+
+          >Nishan Moktan Tamang</span
+        >
+      </p>
+    </footer>
+  </body>
+</html>
